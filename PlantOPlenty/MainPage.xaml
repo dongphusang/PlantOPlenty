@@ -3,22 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlantOPlenty.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout BackgroundColor="#028174">
+        
+        <!--Landing page: Welcome texts-->
+        <Label Text="Welcome! This is" 
+               HorizontalTextAlignment="Center" 
+               TextColor="#ffe3b3" 
+               FontFamily="Alegreya SC" 
+               FontSize="18"
+               Margin="0, 30, 0, 0"
+               />
+        <Label Text="PLANTY O' PLENTY"
+               HorizontalTextAlignment="Center"
+               TextColor="#fee3b3"
+               FontFamily="Alegreya SC"
+               FontSize="30"
+               Margin="0, -2, 0, 40"/>
+
+
+        <!--Landing page: Plant image-->
+        <Image Source="Landing.png"
+               WidthRequest="300"/>
+        <BoxView WidthRequest="325"
+                 HeightRequest="1"
+                 BackgroundColor="Black"
+                 HorizontalOptions="CenterAndExpand"
+                 Margin="0,-5,0,40"/>
+
+        <!--Landing page: button-->
+        <Button Text="Plant Wiki"
+                TextTransform="None"
+                Font="Bold, 19"
+                FontFamily="Times New Roman"
+                TextColor="Black"
+                BackgroundColor="#72bb53"
+                Margin="60,60"
+                HeightRequest="58"    
+                BorderWidth="0.1"
+                BorderColor="Red"
+                Clicked="PlantWiki_Clicked"/>
     </StackLayout>
 
 </ContentPage>

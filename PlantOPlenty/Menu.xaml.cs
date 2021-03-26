@@ -8,16 +8,13 @@ using Xamarin.Forms;
 
 namespace PlantOPlenty
 {
-    public partial class MainPage : ContentPage
+    public partial class Menu : ContentPage
     {
-        public MainPage()
+        public Menu()
         {
             InitializeComponent();
         }
 
-        async void PlantWiki_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Menu());
-        }
+        
     }
 }
