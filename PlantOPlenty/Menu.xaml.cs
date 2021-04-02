@@ -10,11 +10,28 @@ namespace PlantOPlenty
 {
     public partial class Menu : ContentPage
     {
+        public static string PlantName 
+        { 
+            get
+            {
+                return PlantName;
+            }
+            set { PlantName = value; }
+        } 
+
+
         public Menu()
         {
             InitializeComponent();
         }
-
         
+        async void Section_Clicked (object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new InfoBoard());
+            //PlantName = ((Button)sender).Text;    // the cause of crashes. Solution: find another way to get variable name
+
+        }
+
+  
     }
 }

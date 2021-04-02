@@ -7,26 +7,171 @@
              Padding="0,40,0,40">
 
     <ScrollView >
-        <StackLayout>
-            <BoxView BackgroundColor="#92d36e"
-                         HeightRequest= "200"
-                         HorizontalOptions="FillAndExpand"/>
+        <StackLayout BackgroundColor="#eea236">
 
-            <BoxView BackgroundColor="#92d36e"
-                         HeightRequest="200"
-                         HorizontalOptions="FillAndExpand"/>
+            <!-- Alocasia Polly -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
 
-            <BoxView BackgroundColor="#92d36e"
-                         HeightRequest="200"
-                         HorizontalOptions="FillAndExpand"/>
+                <!-- image border -->
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="AlocasiaPolly"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"
+                         IsVisible="true"/>
+                
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
 
-            <BoxView BackgroundColor="#92d36e"
-                         HeightRequest="200"
-                         HorizontalOptions="FillAndExpand"/>
+                <Image Grid.Column="1"
+                       Source="menu_AlocasiaPolly.png"                       
+                       Margin="15"/>
 
-            <BoxView BackgroundColor="#92d36e"
-                         HeightRequest="200"
-                         HorizontalOptions="FillAndExpand"/>
+                <Label Grid.Column="0"
+                       Text="Alocasia Polly"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 45, 0, 0"/>
+            </Grid>
+            
+            <!-- Aloe Vera -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
+                
+                <!-- image border -->
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
+                
+                <Image Grid.Column="1"
+                       Source="menu_aloe.png"                       
+                       Margin="15"/>
+                
+                <Label Grid.Column="0"
+                       Text="Aloe Vera"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 45, 0, 0"/>
+            </Grid>
+
+            <!-- Anthurium Red -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
+
+                <!-- image border -->
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
+
+                <Image Grid.Column="1"
+                       Source="menu_AnthuriumRed.png"                       
+                       Margin="15"/>
+
+                <Label Grid.Column="0"
+                       Text="Anthurium Red"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 45, 0, 0"/>
+            </Grid>
+
+            <!-- Areca Palm -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
+                
+                <!-- image border -->
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
+
+                <Image Grid.Column="1"
+                       Source="menu_ArecaPalm.png"                       
+                       Margin="15"/>
+
+                <Label Grid.Column="0"
+                       Text="Areca Palm"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 45, 0, 0"/>
+            </Grid>
+
+            <!-- Boston Fern -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
+
+                <!-- image border -->
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
+
+                <Image Grid.Column="1"
+                       Source="menu_BostonFern.png"                       
+                       Margin="15"/>
+
+                <Label Grid.Column="0"
+                       Text="Boston Fern"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 45, 0, 0"/>
+            </Grid>
+
+            <!-- Calathea Freddy -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
+
+                <!-- image border -->
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
+
+                <Image Grid.Column="1"
+                       Source="menu_CalatheaFreddy.png"                       
+                       Margin="15"/>
+
+                <Label Grid.Column="0"
+                       Text="Calathea Freddy"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 30, 0, 0"/>
+            </Grid>
+            
+            <!-- Croton -->
+            <Grid RowDefinitions="120"
+                  ColumnDefinitions="*,*"
+                  BackgroundColor="#92d36e"
+                  Margin="1, 1, 1, -5">
+
+                <!-- image border -->
+                <BoxView Grid.Column="1"
+                         BackgroundColor="Black"
+                         Margin="55, 14, 55, 13"/>
+
+                <Image Grid.Column="1"
+                       Source="menu_Croton.png"                       
+                       Margin="15"/>
+
+                <Label Grid.Column="0"
+                       Text="Croton"                       
+                       FontSize="25"
+                       TextColor="White"
+                       Margin="30, 45, 0, 0"/>
+            </Grid>
+
+            
 
         </StackLayout>
     </ScrollView>
