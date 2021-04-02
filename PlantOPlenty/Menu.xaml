@@ -15,21 +15,21 @@
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
 
-                <!-- image border -->
                 <Button  Grid.Column="0"
                          Grid.ColumnSpan="2"
                          BackgroundColor="Transparent"
-                         Text="AlocasiaPolly"
+                         Text="Alocasia Polly"
                          TextColor="Transparent"
                          Clicked="Section_Clicked"
                          IsVisible="true"/>
-                
+
+                <!-- image border -->
                 <BoxView Grid.Column="1"
                          BackgroundColor="Black"
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="menu_AlocasiaPolly.png"                       
+                       Source="AlocasiaPolly.png"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -44,6 +44,14 @@
                   ColumnDefinitions="*,*"
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
+
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="Aloe Vera"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"
+                         IsVisible="true"/>
                 
                 <!-- image border -->
                 <BoxView Grid.Column="1"
@@ -51,7 +59,7 @@
                          Margin="55, 14, 55, 13"/>
                 
                 <Image Grid.Column="1"
-                       Source="menu_aloe.png"                       
+                       Source="AloeVera.png"                       
                        Margin="15"/>
                 
                 <Label Grid.Column="0"
@@ -73,7 +81,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="menu_AnthuriumRed.png"                       
+                       Source="AnthuriumRed.png"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -95,7 +103,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="menu_ArecaPalm.png"                       
+                       Source="ArecaPalm.png"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -117,7 +125,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="menu_BostonFern.png"                       
+                       Source="BostonFern.png"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -139,7 +147,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="menu_CalatheaFreddy.png"                       
+                       Source="CalatheaFreddy.png"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -161,7 +169,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="menu_Croton.png"                       
+                       Source="Croton.png"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"

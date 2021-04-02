@@ -11,6 +11,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="PlantsDescription\AlocasiaPolly_Desc.txt" />
+    <None Remove="PlantsDescription\AlocasiaPolly_Lux.txt" />
+    <None Remove="PlantsDescription\AloeVera_Desc.txt" />
+    <None Remove="PlantsDescription\AloeVera_Lux.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="PlantsDescription\AlocasiaPolly_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\AlocasiaPolly_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\AloeVera_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\AloeVera_Lux.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
