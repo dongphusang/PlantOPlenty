@@ -10,15 +10,7 @@ namespace PlantOPlenty
 {
     public partial class Menu : ContentPage
     {
-        public static string PlantName 
-        { 
-            get
-            {
-                return PlantName;
-            }
-            set { PlantName = value; }
-        } 
-
+        
 
         public Menu()
         {
@@ -28,7 +20,8 @@ namespace PlantOPlenty
         async void Section_Clicked (object sender, EventArgs e)
         {
             await Navigation.PushAsync(new InfoBoard());
-            //PlantName = ((Button)sender).Text;    // the cause of crashes. Solution: find another way to get variable name
+            InfoBoardData.PlantName = ((Button)sender).Text; // getting info of which plant the user is interested, register the plant in InfoBoardData class
+            Console.WriteLine($"{((Button)sender).Text}");
 
         }
 
