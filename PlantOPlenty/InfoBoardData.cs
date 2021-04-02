@@ -15,7 +15,7 @@ namespace PlantOPlenty
 
         public InfoBoardData ()
         {
-            Console.WriteLine(PlantName);
+            Console.WriteLine($"{PlantName} Source: Infoboard.cs"); //debugging
         }
 
 

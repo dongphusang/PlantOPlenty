@@ -19,10 +19,8 @@ namespace PlantOPlenty
         
         async void Section_Clicked (object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new InfoBoard());
             InfoBoardData.PlantName = ((Button)sender).Text; // getting info of which plant the user is interested, register the plant in InfoBoardData class
-            Console.WriteLine($"{((Button)sender).Text}");
-
+            await Navigation.PushAsync(new InfoBoard());
         }
 
   
