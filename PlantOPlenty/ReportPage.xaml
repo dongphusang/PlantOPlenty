@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PlantOPlenty"
+             x:Class="PlantOPlenty.ReportPage">
+
+    <!-- Binding Context-->
+    <ContentPage.BindingContext>
+        <local:InfoBoardData/>
+    </ContentPage.BindingContext>
+
+    <!-- Mother container -->
+    <StackLayout BackgroundColor="#028174">
+        <!-- Report -->
+        <Grid ColumnDefinitions="*,*,*" RowDefinitions="auto" RowSpacing="90" Padding="20, 30, 30, 0">
+            
+            <!-- Title -->
+            <Label Text="Report" TextColor="Red" FontSize="30" FontAttributes="Bold" Grid.Column="0" Grid.Row="0"/>
+            
+            <!-- Result from assessment -->
+            <Label Text="Below  recommendation" TextColor="Black" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            
+            <!-- Lux achieved -->
+            <Label Text="You achieved:" TextColor="#aedd94" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding AverageLux}" TextColor="#aedd94" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,30,0,0"/>
+
+            <!-- Recommended lux-->
+            <Label Text="Recommended:" TextColor="#ffe3b3" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding RecommededLuxValue}" TextColor="#ffe3b3" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,30,0,0"/>
+            
+            <!-- Progress Bar (higher the lux value, the more filled) -->
+            <ProgressBar Progress="1" BackgroundColor="White"  ProgressColor="#aedd94" Grid.Column="2" Grid.RowSpan="4" Margin="50,80,10,-20" />
+        </Grid>
+        <!-- Separator -->
+        <BoxView WidthRequest="300"
+                 HeightRequest="1"
+                 BackgroundColor="Black"
+                 HorizontalOptions="CenterAndExpand"
+                 Margin="0,70,0,0"/>
+        <!-- Button -->
+        <Button Text="Measure Lighting"
+                TextColor="#1b5e20"
+                Font="Bold,17"
+                BackgroundColor="#fee3b3"
+                Margin="58, 5, 58, 0"
+                HeightRequest="62"    
+                BorderWidth="0.1"
+                BorderColor="Red"
+                Clicked="MeasureLighting_Clicked"/>
+    </StackLayout>
+    
+
+</ContentPage>

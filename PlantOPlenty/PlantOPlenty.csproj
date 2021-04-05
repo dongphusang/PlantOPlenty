@@ -15,6 +15,16 @@
     <None Remove="PlantsDescription\AlocasiaPolly_Lux.txt" />
     <None Remove="PlantsDescription\AloeVera_Desc.txt" />
     <None Remove="PlantsDescription\AloeVera_Lux.txt" />
+    <None Remove="PlantsDescription\AnthuriumRed_Desc.txt" />
+    <None Remove="PlantsDescription\AnthuriumRed_Lux.txt" />
+    <None Remove="PlantsDescription\ArecaPalm_Desc.txt" />
+    <None Remove="PlantsDescription\ArecaPalm_Lux.txt" />
+    <None Remove="PlantsDescription\BostonFern_Desc.txt" />
+    <None Remove="PlantsDescription\BostonFern_Lux.txt" />
+    <None Remove="PlantsDescription\CalatheaFreddy_Desc.txt" />
+    <None Remove="PlantsDescription\CalatheaFreddy_Lux.txt" />
+    <None Remove="PlantsDescription\Croton_Desc.txt" />
+    <None Remove="PlantsDescription\Croton_Lux.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +32,16 @@
     <EmbeddedResource Include="PlantsDescription\AlocasiaPolly_Lux.txt" />
     <EmbeddedResource Include="PlantsDescription\AloeVera_Desc.txt" />
     <EmbeddedResource Include="PlantsDescription\AloeVera_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\AnthuriumRed_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\AnthuriumRed_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\ArecaPalm_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\ArecaPalm_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\BostonFern_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\BostonFern_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\CalatheaFreddy_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\CalatheaFreddy_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\Croton_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\Croton_Lux.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +52,9 @@
   <ItemGroup>
     <Compile Update="InfoBoard.xaml.cs">
       <DependentUpon>InfoBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ReportPage.xaml.cs">
+      <DependentUpon>ReportPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>

@@ -17,7 +17,13 @@ namespace PlantOPlenty
             plantData = new InfoBoardData(); // plantData object for UI manipulation
         }
 
+        async void MeasureLighting_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ReportPage());
+        }
 
-        
+
+
+
     }
 }

@@ -20,8 +20,7 @@
                          BackgroundColor="Transparent"
                          Text="Alocasia Polly"
                          TextColor="Transparent"
-                         Clicked="Section_Clicked"
-                         IsVisible="true"/>
+                         Clicked="Section_Clicked"/>
 
                 <!-- image border -->
                 <BoxView Grid.Column="1"
@@ -29,7 +28,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="AlocasiaPolly.png"                       
+                       Source="AlocasiaPolly.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -50,8 +49,7 @@
                          BackgroundColor="Transparent"
                          Text="Aloe Vera"
                          TextColor="Transparent"
-                         Clicked="Section_Clicked"
-                         IsVisible="true"/>
+                         Clicked="Section_Clicked"/>
                 
                 <!-- image border -->
                 <BoxView Grid.Column="1"
@@ -59,7 +57,7 @@
                          Margin="55, 14, 55, 13"/>
                 
                 <Image Grid.Column="1"
-                       Source="AloeVera.png"                       
+                       Source="AloeVera.jpg"                       
                        Margin="15"/>
                 
                 <Label Grid.Column="0"
@@ -75,13 +73,20 @@
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
 
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="Anthurium Red"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"/>
+                
                 <!-- image border -->
                 <BoxView Grid.Column="1"
                          BackgroundColor="Black"
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="AnthuriumRed.png"                       
+                       Source="AnthuriumRed.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -96,6 +101,13 @@
                   ColumnDefinitions="*,*"
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
+
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="Areca Palm"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"/>
                 
                 <!-- image border -->
                 <BoxView Grid.Column="1"
@@ -103,7 +115,7 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="ArecaPalm.png"                       
+                       Source="ArecaPalm.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -119,13 +131,20 @@
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
 
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="Boston Fern"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"/>
+                
                 <!-- image border -->
                 <BoxView Grid.Column="1"
                          BackgroundColor="Black"
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="BostonFern.png"                       
+                       Source="BostonFern.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -141,13 +160,20 @@
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
 
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="Calathea Freddy"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"/>
+                
                 <!-- image border -->
                 <BoxView Grid.Column="1"
                          BackgroundColor="Black"
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="CalatheaFreddy.png"                       
+                       Source="CalatheaFreddy.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
@@ -163,13 +189,20 @@
                   BackgroundColor="#92d36e"
                   Margin="1, 1, 1, -5">
 
+                <Button  Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         BackgroundColor="Transparent"
+                         Text="Croton"
+                         TextColor="Transparent"
+                         Clicked="Section_Clicked"/>
+                
                 <!-- image border -->
                 <BoxView Grid.Column="1"
                          BackgroundColor="Black"
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="Croton.png"                       
+                       Source="Croton.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
