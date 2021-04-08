@@ -18,7 +18,7 @@
             <Label Text="Report" TextColor="Red" FontSize="30" FontAttributes="Bold" Grid.Column="0" Grid.Row="0"/>
             
             <!-- Result from assessment -->
-            <Label Text="Below  recommendation" TextColor="Black" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <Label Text="{Binding AssessmentResult}" TextColor="Black" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
             
             <!-- Lux achieved -->
             <Label Text="You achieved:" TextColor="#aedd94" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
@@ -30,7 +30,7 @@
             
             <!-- Progress Bar (higher the lux value, the more filled) -->
             <Frame BackgroundColor="White" Grid.Column="2" Grid.RowSpan="4" Margin="30, 60, 20, 0" TranslationY="15" BorderColor="Black" Padding="1" >
-                <BoxView VerticalOptions="End" BackgroundColor="#aedd94" HeightRequest="300"/>
+                <BoxView VerticalOptions="End" BackgroundColor="{Binding BoxViewColour}" HeightRequest="{Binding BoxViewHeight}"/>
             </Frame>
         </Grid>
         <!-- Separator -->

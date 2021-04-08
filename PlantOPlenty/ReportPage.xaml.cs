@@ -20,6 +20,7 @@ namespace PlantOPlenty
         public void MeasureLighting_Clicked(object sender, EventArgs e)
         {
             InitializeComponent();
+            //var reportPage = new ReportPageData();
         }
 
     }
