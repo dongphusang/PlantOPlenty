@@ -27,7 +27,7 @@ namespace PlantOPlenty
             plantNameNoSpace = PlantOPlenty.InfoBoardData.plantName.Replace(" ", "");
             recommendedLuxValue = GetPlantLux();
             averageRecommendedLux = GetAverageRecLux();
-            //progressTOwardRecLux = GetProgressTowardRecLux();
+            progressTowardRecLux = GetProgressTowardRecLux();
             //UpdateProgress();
         }
         
@@ -40,26 +40,36 @@ namespace PlantOPlenty
         private static int GetAverageRecLux()
         {
             // declaring local vars
-            int lower; // lower bar of recommended lux
-            int upper; // upper bar of recommended lux
+            int lower = 0; // lower bar of recommended lux
+            int upper = 0; // upper bar of recommended lux
             int separatorIndex; // the index of the separator in text
             string stringHolder; // temp holder used for extracting upper and lower integers
 
             // extracting numbers from text
             stringHolder = recommendedLuxValue.Replace(" ", "");
-            stringHolder = stringHolder.Replace("lux", "");
-            stringHolder = stringHolder.Replace(",", "");
-            separatorIndex = stringHolder.IndexOf("-");
-            lower = Int32.Parse(stringHolder.Substring(0, separatorIndex));
-            upper = Int32.Parse(stringHolder.Substring(separatorIndex+1));
-            // calculating average
+            if (stringHolder.Contains("-")) // if recommendation varies
+            {
+                stringHolder = stringHolder.Replace("lux", "");
+                stringHolder = stringHolder.Replace(",", "");
+                separatorIndex = stringHolder.IndexOf("-");
+                lower = Int32.Parse(stringHolder.Substring(0, separatorIndex));
+                upper = Int32.Parse(stringHolder.Substring(separatorIndex + 1));
+            }
+            else  // recommendation is a single value
+            {
+                stringHolder = stringHolder.Replace("lux", "");
+                stringHolder = stringHolder.Replace(",", "");
+                upper = Int32.Parse(stringHolder.Substring(0));
+                lower = upper;
+            }           
+            // calculating average and return value
             return (lower + upper) / 2;           
         }
 
         // calculate progress toward recommended lux
         private static double GetProgressTowardRecLux()
         {
-            return 3.3;
+            return (measuredLux / averageRecommendedLux) * 100;
         }
 
         // update progress bar (boxview) attribute
