@@ -14,7 +14,6 @@ namespace PlantOPlenty
     {
 
         public static string plantName; // contains space. Ex: Alocasia Polly
-        public static int averageLux;
         private static string plantNameNoSpace; // removed all white space from plantName var. Used within this class instead of plantName var (since file names don't have space -> easier file manipulation). Ex: AlocasiaPolly
         private string embeddedPicturePath;
         //private static string averageLux; // the lux value that is to be displayed to the user. The system will attempt to measure the surrounding light 10 times, sum them up, then divided by 10
@@ -25,7 +24,6 @@ namespace PlantOPlenty
         public string PlantName { get { return plantName; } } // provides access to the variable for InfoBoard.xaml 
         public string PlantDescription { get; set; } // description of a plant. decided right after PlantName is changed. Pulled up from an embedded file
         public string RecommededLuxValue { get; set; }// A plant recommeded lux value. decided right after PlantName is changed. Pulled up from an embedded file
-        public int AverageLux { get { return averageLux; } } // property of averageLux
 
         // initializing variables
         public InfoBoardData()
@@ -39,7 +37,6 @@ namespace PlantOPlenty
             //debugging
             Console.WriteLine($"DEBUG: InfoBoardData.InfoBoardData().plantDescription.Debug => {PlantDescription}");
             Console.WriteLine($"DEBUG: InfoBoardData.InfoBoardData().luxValue.Debug => {RecommededLuxValue}");
-            Console.WriteLine($"DEUBG: InfoBoardData.InfoBoardData().averageLux.Debug => {AverageLux}");
             
 
         }

@@ -10,11 +10,10 @@ namespace PlantOPlenty
 {
     public partial class InfoBoard : ContentPage
     {
-        private static InfoBoardData plantData;
         public InfoBoard()
         {
+            var plantData = new InfoBoardData(); // initialize InforBoardData
             InitializeComponent();
-            plantData = new InfoBoardData(); // plantData object for UI manipulation
         }
 
         async void MeasureLighting_Clicked(object sender, EventArgs e)

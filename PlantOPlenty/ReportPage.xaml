@@ -6,7 +6,7 @@
 
     <!-- Binding Context-->
     <ContentPage.BindingContext>
-        <local:InfoBoardData/>
+        <local:ReportPageData/>
     </ContentPage.BindingContext>
 
     <!-- Mother container -->
@@ -22,14 +22,16 @@
             
             <!-- Lux achieved -->
             <Label Text="You achieved:" TextColor="#aedd94" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
-            <Label Text="{Binding AverageLux}" TextColor="#aedd94" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,30,0,0"/>
+            <Label Text="{Binding MeasuredLux}" TextColor="#aedd94" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,30,0,0"/>
 
             <!-- Recommended lux-->
             <Label Text="Recommended:" TextColor="#ffe3b3" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
-            <Label Text="{Binding RecommededLuxValue}" TextColor="#ffe3b3" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,30,0,0"/>
+            <Label Text="{Binding RecommendedLuxValue}" TextColor="#ffe3b3" FontSize="25" FontAttributes="Bold" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,30,0,0"/>
             
             <!-- Progress Bar (higher the lux value, the more filled) -->
-            <ProgressBar Progress="1" BackgroundColor="White"  ProgressColor="#aedd94" Grid.Column="2" Grid.RowSpan="4" Margin="50,80,10,-20" />
+            <Frame BackgroundColor="White" Grid.Column="2" Grid.RowSpan="4" Margin="30, 60, 20, 0" TranslationY="15" BorderColor="Black" Padding="1" >
+                <BoxView VerticalOptions="End" BackgroundColor="#aedd94" HeightRequest="300"/>
+            </Frame>
         </Grid>
         <!-- Separator -->
         <BoxView WidthRequest="300"
@@ -46,6 +48,7 @@
                 HeightRequest="62"    
                 BorderWidth="0.1"
                 BorderColor="Red"
+                CornerRadius="10"
                 Clicked="MeasureLighting_Clicked"/>
     </StackLayout>
     

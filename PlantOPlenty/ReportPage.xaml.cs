@@ -13,6 +13,7 @@ namespace PlantOPlenty
         public ReportPage()
         {
             InitializeComponent();
+            var reportPage = new ReportPageData();
         }
 
         // refresh page

@@ -49,11 +49,12 @@ namespace PlantOPlenty.Droid
         {
         }
 
+        // update current lux value to ReportPageData class
         public void  OnSensorChanged(SensorEvent e)
         {
             if (e.Sensor.GetType() == lightSensor.GetType())
             {
-                PlantOPlenty.InfoBoardData.averageLux = (int)e.Values[0];
+                PlantOPlenty.ReportPageData.measuredLuxValue = (int)e.Values[0];
             }
         }
     }
