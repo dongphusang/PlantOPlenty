@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PlantOPlenty
 {
@@ -38,6 +41,8 @@ namespace PlantOPlenty
             progressTowardRecLux = GetProgressTowardRecLux();
             UpdateProgressBar();
             UpdateMeasuringStatus();
+            //RegisterLuxToFile();
+            UploadLuxToBlob();
         }
         
         // averaging recommended lux values
@@ -59,7 +64,7 @@ namespace PlantOPlenty
             if (stringHolder.Contains("-")) // if recommendation varies
             {
                 stringHolder = stringHolder.Replace("lux", "");
-                stringHolder = stringHolder.Replace(",", "");
+                stringHolder = stringHolder.Replace(",", "");               
                 separatorIndex = stringHolder.IndexOf("-");
                 lower = Int32.Parse(stringHolder.Substring(0, separatorIndex));
                 upper = Int32.Parse(stringHolder.Substring(separatorIndex + 1));
@@ -119,6 +124,27 @@ namespace PlantOPlenty
                 boxViewColour = "#aedd94";  // progress bar colour set to light green
 
             }
+        }
+
+        // upload measured lux to azure blob
+        private static async void UploadLuxToBlob()
+        {
+            // attributes of file to be uploaded
+            string fileName = "LuxData";
+            // establish connection
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=plantoplenty;AccountKey=TvXPh8x7prFHgA424PZIRkSDMazVgP0ff4LwNUJbnNJSl61Mt/Ymp0UMxbGhL8d7kb3W0LizFBXh97iiNhMsng==;EndpointSuffix=core.windows.net";
+            CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);
+            CloudBlobClient blobClient = account.CreateCloudBlobClient();
+            CloudBlobContainer blobContainer = blobClient.GetContainerReference("pop-lightdata");
+            // perform uploading
+            await UploadData(fileName, blobContainer);
+        }
+
+        private static async Task UploadData(string fileName, CloudBlobContainer blobContainer)
+        {
+            string timeOfCapture = DateTime.Now.ToString();
+            var blockBlob = blobContainer.GetBlockBlobReference($"{fileName} {timeOfCapture}");
+            await blockBlob.UploadTextAsync($"Measured Lux: {measuredLux} lux \n");
         }
 
         // serves to find and get plant lux level

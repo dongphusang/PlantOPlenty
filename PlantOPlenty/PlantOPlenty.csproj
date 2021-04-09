@@ -25,6 +25,7 @@
     <None Remove="PlantsDescription\CalatheaFreddy_Lux.txt" />
     <None Remove="PlantsDescription\Croton_Desc.txt" />
     <None Remove="PlantsDescription\Croton_Lux.txt" />
+    <None Remove="SensorsData\LuxData.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,9 +43,13 @@
     <EmbeddedResource Include="PlantsDescription\CalatheaFreddy_Lux.txt" />
     <EmbeddedResource Include="PlantsDescription\Croton_Desc.txt" />
     <EmbeddedResource Include="PlantsDescription\Croton_Lux.txt" />
+    <EmbeddedResource Include="SensorsData\LuxData.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
