@@ -21,11 +21,10 @@
     <None Remove="PlantsDescription\ArecaPalm_Lux.txt" />
     <None Remove="PlantsDescription\BostonFern_Desc.txt" />
     <None Remove="PlantsDescription\BostonFern_Lux.txt" />
-    <None Remove="PlantsDescription\CalatheaFreddy_Desc.txt" />
-    <None Remove="PlantsDescription\CalatheaFreddy_Lux.txt" />
+    <None Remove="PlantsDescription\CalatheaFreddie_Desc.txt" />
+    <None Remove="PlantsDescription\CalatheaFreddie_Lux.txt" />
     <None Remove="PlantsDescription\Croton_Desc.txt" />
     <None Remove="PlantsDescription\Croton_Lux.txt" />
-    <None Remove="SensorsData\LuxData.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,13 +38,10 @@
     <EmbeddedResource Include="PlantsDescription\ArecaPalm_Lux.txt" />
     <EmbeddedResource Include="PlantsDescription\BostonFern_Desc.txt" />
     <EmbeddedResource Include="PlantsDescription\BostonFern_Lux.txt" />
-    <EmbeddedResource Include="PlantsDescription\CalatheaFreddy_Desc.txt" />
-    <EmbeddedResource Include="PlantsDescription\CalatheaFreddy_Lux.txt" />
+    <EmbeddedResource Include="PlantsDescription\CalatheaFreddie_Desc.txt" />
+    <EmbeddedResource Include="PlantsDescription\CalatheaFreddie_Lux.txt" />
     <EmbeddedResource Include="PlantsDescription\Croton_Desc.txt" />
     <EmbeddedResource Include="PlantsDescription\Croton_Lux.txt" />
-    <EmbeddedResource Include="SensorsData\LuxData.txt">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

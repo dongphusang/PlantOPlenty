@@ -109,7 +109,7 @@
     <AndroidResource Include="Resources\drawable\AnthuriumRed.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\CalatheaFreddy.jpg" />
+    <AndroidResource Include="Resources\drawable\CalatheaFreddie.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\AlocasiaPolly.jpg" />

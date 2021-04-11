@@ -22,10 +22,10 @@
                 <!-- Plant Image -->
                 <Image Source="{Binding EmbeddedPicturePath}" HorizontalOptions="Center"  />
                 <!-- Recommended light level -->
-                <Label Text="Recommended Lighting" TextColor="White" HorizontalTextAlignment="Center" FontSize="20"/>
-                <Label Text="{Binding RecommededLuxValue}" TextColor="White" HorizontalTextAlignment="Center" FontAttributes="Italic" FontSize="20" Margin="0, 0, 0, 30"/>
+                <Label Text="Recommended Lighting" TextColor="#ffe3b3" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label Text="{Binding RecommededLuxValue}" TextColor="#ffe3b3" HorizontalTextAlignment="Center" FontAttributes="Italic" FontSize="20" Margin="0, 0, 0, 30"/>
                 <!-- Description -->
-                <Label Text="{Binding PlantDescription}" TextColor="Black" HorizontalTextAlignment="Start"/>
+                <Label Text="{Binding PlantDescription}" TextColor="White" FontSize="20" LineHeight="1.25" HorizontalTextAlignment="Start"/>
             </StackLayout>
         </ScrollView>
         <!-- Separator -->

@@ -42,7 +42,7 @@ namespace PlantOPlenty
             UpdateProgressBar();
             UpdateMeasuringStatus();
             //RegisterLuxToFile();
-            UploadLuxToBlob();
+            //UploadLuxToBlob();
         }
         
         // averaging recommended lux values
@@ -73,6 +73,7 @@ namespace PlantOPlenty
             {
                 stringHolder = stringHolder.Replace("lux", "");
                 stringHolder = stringHolder.Replace(",", "");
+                stringHolder = stringHolder.Replace("Above", "");
                 upper = Int32.Parse(stringHolder.Substring(0));
                 lower = upper;
             }
@@ -140,10 +141,13 @@ namespace PlantOPlenty
             await UploadData(fileName, blobContainer);
         }
 
+        // upload text to azure blob
         private static async Task UploadData(string fileName, CloudBlobContainer blobContainer)
         {
-            string timeOfCapture = DateTime.Now.ToString();
-            var blockBlob = blobContainer.GetBlockBlobReference($"{fileName} {timeOfCapture}");
+            // time of 
+            string timeOfUpload = DateTime.Now.ToString();
+            // access or create then access text file in specified container
+            var blockBlob = blobContainer.GetBlockBlobReference($"{fileName} {timeOfUpload}");
             await blockBlob.UploadTextAsync($"Measured Lux: {measuredLux} lux \n");
         }
 

@@ -11677,7 +11677,7 @@ namespace PlantOPlenty.Droid
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int CalatheaFreddy = 2131165291;
+			public const int CalatheaFreddie = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
 			public const int Croton = 2131165292;

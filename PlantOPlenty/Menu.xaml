@@ -154,7 +154,7 @@
                        Margin="30, 45, 0, 0"/>
             </Grid>
 
-            <!-- Calathea Freddy -->
+            <!-- Calathea Freddie -->
             <Grid RowDefinitions="120"
                   ColumnDefinitions="*,*"
                   BackgroundColor="#92d36e"
@@ -163,7 +163,7 @@
                 <Button  Grid.Column="0"
                          Grid.ColumnSpan="2"
                          BackgroundColor="Transparent"
-                         Text="Calathea Freddy"
+                         Text="Calathea Freddie"
                          TextColor="Transparent"
                          Clicked="Section_Clicked"/>
                 
@@ -173,11 +173,11 @@
                          Margin="55, 14, 55, 13"/>
 
                 <Image Grid.Column="1"
-                       Source="CalatheaFreddy.jpg"                       
+                       Source="CalatheaFreddie.jpg"                       
                        Margin="15"/>
 
                 <Label Grid.Column="0"
-                       Text="Calathea Freddy"                       
+                       Text="Calathea Freddie"                       
                        FontSize="25"
                        TextColor="White"
                        Margin="30, 30, 0, 0"/>
